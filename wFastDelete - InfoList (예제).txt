@@ -1,0 +1,32 @@
+    24489 D:\_PW\wFastDelete\src\obj\src\wFastDelete_FileFind.o
+    69888 D:\_PW\wFastDelete\src\obj\src\wFastDelete_main.o
+    14909 D:\_PW\wFastDelete\src\obj\src\wFastDelete_module.o
+     1326 D:\_PW\wFastDelete\src\obj\src\wFastDelete_private.res
+    29879 D:\_PW\wFastDelete\src\obj\wFastDelete_FileFind.o
+    21668 D:\_PW\wFastDelete\src\obj\wFastDelete_RemoveTest_main.o
+     1611 D:\_PW\wFastDelete\src\wFastDelete.cbp
+      855 D:\_PW\wFastDelete\src\wFastDelete.depend
+     1742 D:\_PW\wFastDelete\src\wFastDelete.layout
+      254 D:\_PW\wFastDelete\src\wFastDelete.workspace
+      243 D:\_PW\wFastDelete\src\wFastDelete.workspace.layout
+     8878 D:\_PW\wFastDelete\src\wFastDelete_FileFind.c
+     1845 D:\_PW\wFastDelete\src\wFastDelete_FileFind.h
+    23023 D:\_PW\wFastDelete\src\wFastDelete_main.c
+       68 D:\_PW\wFastDelete\src\wFastDelete_main.h
+     3946 D:\_PW\wFastDelete\src\wFastDelete_module.c
+      589 D:\_PW\wFastDelete\src\wFastDelete_module.h
+     1817 D:\_PW\wFastDelete\src\wFastDelete_private.h
+     1499 D:\_PW\wFastDelete\src\wFastDelete_private.rc
+     1134 D:\_PW\wFastDelete\src\wFastDelete_RemoveTest.cbp
+      708 D:\_PW\wFastDelete\src\wFastDelete_RemoveTest.depend
+      779 D:\_PW\wFastDelete\src\wFastDelete_RemoveTest.layout
+     7139 D:\_PW\wFastDelete\src\wFastDelete_RemoveTest_main.c
+
+
+=====
+폴더갯수: 3
+파일갯수: 23
+전체크기: 218,289
+실행시간: 0(밀리초)
+
+D:\_PW\wFastDelete\src

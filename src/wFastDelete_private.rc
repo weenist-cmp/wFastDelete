@@ -1,0 +1,45 @@
+#include <windows.h>
+#include "wFastDelete_private.h"
+
+1 VERSIONINFO
+FILEVERSION V_Major,V_Minor,V_Release,V_Build
+PRODUCTVERSION V_Major,V_Minor,V_Release,V_Build
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"{
+    BLOCK "041204E4"{
+
+      VALUE "FileDescription",   F_Description
+
+      VALUE "ProductName",       P_Name
+      VALUE "ProductVersion",    V_String
+      VALUE "OriginalFilename",  P_FileName
+
+      VALUE "LegalCopyright",    P_Copyright
+    }
+  }
+  BLOCK "VarFileInfo"{
+    VALUE "Translation", 0x0412, 1252
+  }
+}
+
+ID_MainDialog DIALOG 0, 0, 200, 130
+STYLE     DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION // | WS_SYSMENU
+CAPTION   P_Name
+FONT 12,   "Courier New"
+BEGIN
+  LTEXT           P_Name,           ID_Message,      10,10,190, 70, SS_LEFT
+
+  CHECKBOX        def_M_AutoClose,  ID_cAutoClose,   10, 80, 70, 14
+  CHECKBOX        def_M_Silence,    ID_cSilence,     80, 80, 70, 14
+  CHECKBOX        "LM",             ID_cListMode,   160, 80, 30, 14
+  CHECKBOX        "ShowWhileWorking",  ID_cShowWhileWorking,   10, 95, 80, 14
+  CHECKBOX        "ShowWhileRemove",    ID_cShowWhileRemove,     100, 95, 80, 14
+
+  CONTROL         "", ID_pbFF, PROGRESS_CLASS, PBS_SMOOTH, 10, 90, 180, 14, 0 //WS_EX_STATICEDGE //
+
+  COMBOBOX        ID_cbListMode, 20, 110, 40, 48, CBS_DROPDOWNLIST | CBS_HASSTRINGS, WS_EX_LEFT
+
+  DEFPUSHBUTTON   def_B_Register,   ID_b1,  80, 110, 40, 14
+  PUSHBUTTON      def_B_UnRegister, ID_b2, 140, 110, 40, 14
+END

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wFastDelete_RemoveTest" />
+		<Option execution_dir="E:/_PW/wFastDelete/src/wFastDelete_RemoveTest/" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw" />
+		<Build>
+			<Target title="Release">
+				<Option output="../wFastDelete_RemoveTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="mingw" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DwFastDelete_RemoveTest=1" />
+		</Compiler>
+		<Linker>
+			<Add library="/MinGW/lib/libshlwapi.a" />
+		</Linker>
+		<Unit filename="wFastDelete_FileFind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wFastDelete_FileFind.h" />
+		<Unit filename="wFastDelete_RemoveTest_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

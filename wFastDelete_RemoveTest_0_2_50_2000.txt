@@ -1,0 +1,54 @@
+wFastDelete_RemoveTest
+0 2 50 2000
+
+d:\@TestDirectory
+
+[RT_MakeTemp]
+MTD_dct:13  MTD_fct:8,001  MTD_fsz:1,984,370,351
+Time:13,094
+
+[RT_FileFind, FFM_ShowWhileWorking=0]
+0/0 d:\@TestDirectory
+dct:13  fct:8,001  fsz:1,984,370,351
+Time:16
+
+[RT_FileFind, FFM_ShowWhileWorking=1]
+1/13 d:\@TestDirectory\dir0\dir0
+2/13 d:\@TestDirectory\dir0\dir3
+3/13 d:\@TestDirectory\dir0\dir5
+4/13 d:\@TestDirectory\dir0\dir6
+5/13 d:\@TestDirectory\dir0\dir7
+6/13 d:\@TestDirectory\dir0\dir8
+7/13 d:\@TestDirectory\dir0
+8/13 d:\@TestDirectory\dir8\dir1
+9/13 d:\@TestDirectory\dir8\dir5
+10/13 d:\@TestDirectory\dir8\dir8
+11/13 d:\@TestDirectory\dir8\dir9
+12/13 d:\@TestDirectory\dir8
+13/13 d:\@TestDirectory
+dct:13  fct:8,001  fsz:1,984,370,351
+Time:15
+
+[RT_RemoveDirectory, ShowWhileRemove=0]
+Time:2,313 (Succ)
+
+[RT_MakeTemp]
+MTD_dct:13  MTD_fct:8,001  MTD_fsz:1,984,370,351
+Time:14,000
+
+[RT_RemoveDirectory, ShowWhileRemove=1]
+1/13 d:\@TestDirectory\dir0\dir0
+2/13 d:\@TestDirectory\dir0\dir3
+3/13 d:\@TestDirectory\dir0\dir5
+4/13 d:\@TestDirectory\dir0\dir6
+5/13 d:\@TestDirectory\dir0\dir7
+6/13 d:\@TestDirectory\dir0\dir8
+7/13 d:\@TestDirectory\dir0
+8/13 d:\@TestDirectory\dir8\dir1
+9/13 d:\@TestDirectory\dir8\dir5
+10/13 d:\@TestDirectory\dir8\dir8
+11/13 d:\@TestDirectory\dir8\dir9
+12/13 d:\@TestDirectory\dir8
+13/13 d:\@TestDirectory
+Time:2,828 (Succ)
+

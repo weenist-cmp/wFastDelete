@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1569035112 source:e:\_pw\wfastdelete\src\wfastdelete_removetest_main.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	"wFastDelete_FileFind.h"
+
+1569032538 source:e:\_pw\wfastdelete\src\wfastdelete_filefind.c
+	"wFastDelete_FileFind.h"
+
+1569032571 e:\_pw\wfastdelete\src\wfastdelete_filefind.h
+	<windows.h>
+	<stdint.h>
+	<stdio.h>
+
+1569283771 source:d:\_pw\wfastdelete\src\wfastdelete_filefind.c
+	"wFastDelete_FileFind.h"
+
+1569281844 d:\_pw\wfastdelete\src\wfastdelete_filefind.h
+	<windows.h>
+	<stdint.h>
+	<stdio.h>
+
+1569284575 source:d:\_pw\wfastdelete\src\wfastdelete_removetest_main.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<Shlwapi.h>
+	"wFastDelete_FileFind.h"
+

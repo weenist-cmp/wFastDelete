@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wFastDelete" />
+		<Option makefile="wFastDelete.make" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw" />
+		<Build>
+			<Target title="Release">
+				<Option output="../wFastDelete" prefix_auto="1" extension_auto="1" />
+				<Option working_dir=".." />
+				<Option object_output="obj/" />
+				<Option type="0" />
+				<Option compiler="mingw" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-static" />
+			<Add library="/MinGW/lib/libcomctl32.a" />
+			<Add library="/MinGW/lib/libshlwapi.a" />
+			<Add library="/MinGW/lib/libcomdlg32.a" />
+		</Linker>
+		<Unit filename="../wFastDelete.ini" />
+		<Unit filename="wFastDelete_FileFind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wFastDelete_FileFind.h" />
+		<Unit filename="wFastDelete_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wFastDelete_main.h" />
+		<Unit filename="wFastDelete_module.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="wFastDelete_module.h" />
+		<Unit filename="wFastDelete_private.h" />
+		<Unit filename="wFastDelete_private.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
