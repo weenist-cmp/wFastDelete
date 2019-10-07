@@ -4,6 +4,7 @@
 ::
 
 @echo off
+echo 용량이 큰 폴더에서 오류가 남. tcc 자체의 메모리 한계일지도 모른다.
 
 :: 현재 폴더 저장
 set this_DIR=%CD%
@@ -51,7 +52,7 @@ if not exist %this_FN_C1%.o goto err
 if not exist %this_FN_C2%.o goto err
 
 echo ...Build (%this_FN_FR%.exe)
-d:\_PB\tcc\tcc.exe -mwindows -LD:\_PB\tcc\lib -o ..\%this_FN_FR%.exe %this_FN_CM%.o %this_FN_C1%.o %this_FN_C2%.o %this_FN_RC%.res %this_FN_DF0% %this_FN_DF1%
+d:\_PB\tcc\tcc.exe -mwindows -LD:\_PB\tcc\lib -O2 -o ..\%this_FN_FR%.exe %this_FN_CM%.o %this_FN_C1%.o %this_FN_C2%.o %this_FN_RC%.res %this_FN_DF0% %this_FN_DF1%
 ::-rdynamic 
 if not exist ..\%this_FN_FR%.exe goto err
 

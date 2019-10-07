@@ -3,7 +3,7 @@
 
 #define V_Major	  2019
 #define V_Minor	  10
-#define V_Release	2
+#define V_Release	3
 #define V_Build 	1
 
 #define _STR(n) #n
